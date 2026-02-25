@@ -1,7 +1,5 @@
 // @ts-check
 
-const yargs = require('yargs/yargs');
-
 /** @typedef {import("@babel/core").TransformOptions} BabelConfig */
 
 /**
