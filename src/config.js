@@ -1,7 +1,6 @@
 // @ts-check
 
 /** @typedef {import("@babel/core").TransformOptions} BabelConfig */
-
 /**
  *
  * @param {import("./Mix")} mix
