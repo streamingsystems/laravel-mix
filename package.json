@@ -105,7 +105,6 @@
         "@types/semver": "^7.3.9",
         "@types/sinon": "^10.0.6",
         "@types/supertest": "^2.0.11",
-        "@types/yargs": "^17.0.2",
         "@typescript-eslint/parser": "^5.23.0",
         "@vue/compiler-sfc": "^3.2.20",
         "ava": "^4.0.0-rc.1",
