@@ -9,37 +9,28 @@ module.exports = function (mix) {
     // TODO: Remove in Mix 7 -- Here for backwards compat if a plugin requires this file
     mix = mix || global.Mix;
 
-    const argv = yargs(process.argv.slice(2))
-        .options({
-            https: { type: 'boolean', default: false },
-            hmrPort: { type: 'string', default: '8080' },
-            p: { type: 'boolean', default: false },
-            hot: { type: 'boolean', default: false }
-        })
-        .parseSync();
-
     return {
         /**
          * Determine if webpack should be triggered in a production environment.
          *
          * @type {Boolean}
          */
-        production: process.env.NODE_ENV === 'production' || argv.p,
+        production: process.env.NODE_ENV === 'production',
 
         /**
          * Determine if we should enable hot reloading.
          *
          * @type {Boolean}
          */
-        hmr: argv.hot,
+        hmr: false,
 
         /**
          * Hostname and port used for the hot reload module
          */
         hmrOptions: {
-            https: argv.https,
+            https: false,
             host: 'localhost',
-            port: argv.hmrPort
+            port: 443
         },
 
         /**
