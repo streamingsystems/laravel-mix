@@ -121,7 +121,7 @@ class BuildOutputPlugin {
         });
 
         for (const asset of assets) {
-            table.push([chalk.green(asset.name), formatSize(asset.size)]);
+       //     table.push([chalk.green(asset.name), formatSize(asset.size)]);
         }
 
         this.extendTableWidth(table);
