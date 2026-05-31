@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const Table = require('cli-table3');
 const readline = require('readline');
 const stripAnsi = require('strip-ansi');
-const { formatSize } = require('webpack/lib/SizeFormatHelpers');
+//const { formatSize } = require('webpack/lib/SizeFormatHelpers');
 const { version } = require('../../package.json');
 
 /**
